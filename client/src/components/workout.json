@@ -1,0 +1,44 @@
+{
+  "title": "The Recommended Routine",
+  "description": "The full Reddit /r/BodyweightFitness Recommended Routine. Do this 3 times a week. Eg. Mon, Wed. Fri. Aim for more reps on every workout. For progressions, level up after you have reached maximum reps for an exersice. You should perform every",
+  "sets": 3,
+  "rest": 90,
+  "exercises": [
+    {
+      "title": "Pull Ups",
+      "minReps": 5,
+      "maxReps": 8,
+      "videoId": "eGo4IYlbE5g"
+    },
+    {
+      "title": "Dips",
+      "minReps": 5,
+      "maxReps": 8,
+      "videoId": "2z8JmcrW-As"
+    },
+    {
+      "title": "Squat",
+      "minReps": 5,
+      "maxReps": 8,
+      "videoId": "zJBLDJMJiDE"
+    },
+    {
+      "title": "Hinge",
+      "minReps": 5,
+      "maxReps": 8,
+      "videoId": "FujJkRLG1Fg"
+    },
+    {
+      "title": "Rows",
+      "minReps": 5,
+      "maxReps": 8,
+      "videoId": "dvkIaarnf0g"
+    },
+    {
+      "title": "Push-up",
+      "minReps": 5,
+      "maxReps": 8,
+      "videoId": "4dF1DOWzf20"
+    }
+  ]
+}
