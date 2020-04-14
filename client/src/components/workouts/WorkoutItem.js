@@ -15,11 +15,11 @@ const WorkoutItem = ({ workout }) => {
   return (
     <div className="card bg-light">
       <h3 className="text-primary text-left">{title}</h3>
-      {Object.keys(workout.exercises).map((key) => (
+      { workout.exercises ? Object.keys(workout.exercises).map((key) => (
         <ul key={key} className="list">
           {key}:{workout.exercises[key]}
         </ul>
-      ))}
+      )) : []}
       <ul className="list">{date.slice(0, 10)}</ul>
 
       <p>

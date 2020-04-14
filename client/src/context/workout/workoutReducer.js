@@ -23,11 +23,12 @@ export default (state, action) => {
         };
       }
     case UPDATE_WORKOUT:
+      console.log("izmi", state.workouts);
       return {
         ...state,
-        workouts: state.workouts.map((workout) =>
+        workouts: state.workouts ? state.workouts.map((workout) =>
           workout._id === action.payload._id ? action.payload : workout
-        ),
+        ) : [],
         loading: false,
       };
     case DELETE_WORKOUT:
