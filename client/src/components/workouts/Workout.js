@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { Route, Redirect } from 'react-router-dom';
 import WorkoutContext from '../../context/workout/workoutContext';
 import Exercise from './Exercise';
+import { Link } from 'react-router-dom';
 
 const Workout = () => {
   const [workout, setWorkout] = useState('');
@@ -49,7 +49,14 @@ const Workout = () => {
           ))}
         </div>
       )}
-      <button onClick={saveWorkout}>End & Save</button>
+      <Link
+        to="/"
+        className="btn btn-primary btn-sm rounded"
+        style={{ marginTop: 10 }}
+        onClick={saveWorkout}
+      >
+        End & Save
+      </Link>
     </div>
   );
 };

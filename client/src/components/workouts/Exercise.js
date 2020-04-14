@@ -27,7 +27,7 @@ const Exercise = ({ exercise, sets, rest, writeLog }) => {
         <input onClick={onClick} readOnly="readOnly" value={reps} />
       </div>
       <span>
-        <i className="bx bx-time-five"></i>
+        <i className="bx bx-time"></i>
         {` Rest for ${rest} seconds`}
       </span>
     </Fragment>

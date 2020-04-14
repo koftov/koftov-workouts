@@ -5,6 +5,7 @@ import {
   UPDATE_WORKOUT,
   WORKOUT_ERROR,
 } from '../types';
+import { Redirect } from 'react-router-dom';
 
 export default (state, action) => {
   switch (action.type) {
@@ -23,12 +24,14 @@ export default (state, action) => {
         };
       }
     case UPDATE_WORKOUT:
-      console.log("izmi", state.workouts);
+      console.log('izmi', state.workouts);
       return {
         ...state,
-        workouts: state.workouts ? state.workouts.map((workout) =>
-          workout._id === action.payload._id ? action.payload : workout
-        ) : [],
+        workouts: state.workouts
+          ? state.workouts.map((workout) =>
+              workout._id === action.payload._id ? action.payload : workout
+            )
+          : [],
         loading: false,
       };
     case DELETE_WORKOUT:

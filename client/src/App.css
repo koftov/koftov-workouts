@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /* Global Styles */
 :root {
   --primary-color: #6200ee;
   --dark-color: #333333;
-  --light-color: #f4f4f4;
-  --danger-color: #dc3545;
+  --light-color: #fafafa;
+  --danger-color: #000;
   --success-color: #28a745;
 }
 
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -318,8 +318,10 @@ textarea {
 }
 
 input[type='submit'],
-button {
+button,
+Link {
   font: inherit;
+  border-radius: 0.5rem;
 }
 
 .form-group {
@@ -382,6 +384,10 @@ table th {
 
 .navbar .welcome span {
   margin-right: 0.6rem;
+}
+
+.rounded {
+  border-radius: 0.5rem;
 }
 
 /* Animation (Add After) */

@@ -9,6 +9,7 @@ import {
   UPDATE_WORKOUT,
   WORKOUT_ERROR,
 } from '../types';
+import { Redirect } from 'react-router-dom';
 
 const WorkoutState = (props) => {
   const initialState = {

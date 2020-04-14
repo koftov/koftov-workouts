@@ -60,7 +60,7 @@ Navbar.propTypes = {
 };
 
 Navbar.defaultProps = {
-  title: 'Koftov Workouts',
+  title: 'Workouts',
   icon: 'fas fa-dumbbell',
 };
 

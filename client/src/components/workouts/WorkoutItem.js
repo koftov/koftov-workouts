@@ -13,14 +13,16 @@ const WorkoutItem = ({ workout }) => {
   };
 
   return (
-    <div className="card bg-light">
+    <div className="card rounded bg-light" style={{ borderRadius: '0.5rem' }}>
       <h3 className="text-primary text-left">{title}</h3>
-      { workout.exercises ? Object.keys(workout.exercises).map((key) => (
-        <ul key={key} className="list">
-          {key}:{workout.exercises[key]}
-        </ul>
-      )) : []}
-      <ul className="list">{date.slice(0, 10)}</ul>
+      {workout.exercises
+        ? Object.keys(workout.exercises).map((key) => (
+            <ul key={key} className="list">
+              {key}:{workout.exercises[key]}
+            </ul>
+          ))
+        : []}
+      <ul className="list text-success">{date.slice(0, 10)}</ul>
 
       <p>
         <button className="btn btn-danger btn-sm" onClick={onDelete}>
